@@ -4,7 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 body, input{
@@ -192,8 +192,18 @@ form.sign-up-form {
     text-decoration: none;
 }
 
+.noDecoration, a:link, a:visited {
+    text-decoration: none !important;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none !important;
+}
+
 .btn .iniciarsesion {
- text-decoration: none;
+ text-decoration: none !important; 
  color: #f0f0f0;
 }
 
