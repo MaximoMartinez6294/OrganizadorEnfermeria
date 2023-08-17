@@ -9,17 +9,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>  
-    <form class="container" method=" post">
+    <form class="container" method="post">
         <div class="form-image">
             <img src="img/formfoto.svg">
         </div>
 
         <div class="form">
-            <h2>Organizador</h2>
+            <div class="form-header">
+                <h2>Organizador</h2>
+            </div>
+
             <div class="input-wrapper">
               <div class="input-box">
                     <label for="name">Nombre</label>
-                    
                     <input  type="text" name="name" placeholder="Nombre del paciente">
                </div> 
 
@@ -40,7 +42,7 @@
 
               <div class="input-box">
                  <label for="phone">Telefono</label>
-                 <input type="tel" name="phone" placeholder="Telefono">
+                 <input type="text" name="phone" placeholder="Telefono">
               </div>  
 
 
@@ -81,13 +83,16 @@
                 </div>
 
             </div>
-            <div class="guardar-button" >
-                <button type="btn" name="register"> <a href="#"> Guardar </a> </button>
-            </div>
+
+            <input class="guardar-button" type="submit" name="register" value="Guardar"> </input>
+
 
         </div>
         
     </form>
-    
+
+    <?php
+     include("reg.php");
+    ?>
 </body>
 </html>
